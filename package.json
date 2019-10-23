@@ -13,5 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "sergey": "0.0.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpopecreative/sergey-netlify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpopecreative/sergey-netlify/issues"
+  },
+  "homepage": "https://github.com/jpopecreative/sergey-netlify#readme"
 }
