@@ -1,0 +1,111 @@
+<sergey-import src="episode-template">
+  <!--
+      –-----------------------------------------------------------------------------------------
+      // GENERAL CONTENT
+      // Enter general content and HTML for each of the required <sergey-template> properties below
+      //
+  
+      –-----------------------------------------------------------------------------------------
+    -->
+  <!--  Episode Slug
+          Use all lowercase letters with dashes and underscores and do not use spaces for the episode-slug
+          This episode-slug MUST match the exact directory name where this file lives
+          For consistency, but not required, follow this format:
+            1.) Using a dash, start the episode-slug with the episode number, IE: "episode-#"
+            2.) Using an underscore after the episode number and persona name
+            3.) Using dashes again, end the episode-slug with the personas name, IE: "first-last"
+          EXAMPLE: "episode-1_derek-mauk" -->
+  <sergey-template name="episode-slug"> episode-1_derek-mauk</sergey-template>
+
+  <!--  Content Type
+            The episode-name acts as a friendly name rendering to the screen
+          EXAMPLE: " " -->
+  <sergey-template name="content-type">video</sergey-template>
+
+  <!--  Episode Name
+            The episode-name acts as a friendly name rendering to the screen
+          EXAMPLE: "Episode 1" -->
+  <sergey-template name="episode-name"> Episode 1</sergey-template>
+
+  <!--  Persona Name
+            The persona-name acts as a friendly name rendering to the screen
+          EXAMPLE: "Derek Mauk" -->
+  <sergey-template name="persona-name">Derek Mauk</sergey-template>
+
+  <!--  Persona Excerpt
+            ... define ...
+          EXAMPLE: "..." -->
+  <sergey-template name="persona-excerpt">
+    <b>Senior Brand Director &mdash; Budweiser U.S.</b><br />
+    Previously leading Innovation at both Anheuser-Busch and P&G, with a focus
+    on growing teams that consistently deliver top results in the consumer goods
+    space.
+  </sergey-template>
+
+  <!--  Persona Hero Image URL
+            ... define ...
+          EXAMPLE: "..." -->
+  <sergey-template name="persona-hero-image-url">
+    background-image: url(/assets/img/hero_derek-mauk.jpg);</sergey-template
+  >
+
+  <!--  Hero Image Credit
+      *** NOT A REQUIRED PROPERTY ***
+          If persona-hero-image-url usage/license credit is not required or available, then:
+            Remove all space between the open and close tag for this property
+            EXAMPLE: <></>
+          If persona-hero-image-url usage/license credit is available or required, then:
+            Enter all content desired to show in this space
+            EXAMPLE: "Photo by: Joseph Nicéphore Niépce" -->
+  <sergey-template name="persona-hero-image-credit"></sergey-template>
+
+  <!--
+      –-----------------------------------------------------------------------------------------
+      // ARTICLE CONTENT
+      // Enter article content and HTML for each of the required <sergey-template> properties below
+      //
+  
+      –-----------------------------------------------------------------------------------------
+    -->
+
+  <!--  Article Header
+            ... define ... -->
+  <sergey-template name="article-header">
+    <blockquote>
+      “Modeling behavior from the top down allows for confidence in those
+      behaviors from the bottom up.”
+    </blockquote>
+  </sergey-template>
+
+  <!--  Article Body
+            ... define ...  -->
+  <sergey-template name="article-body">
+    <div class="video">
+      <p class="question">
+        <b>Randy:</b> We would like to welcome Tobias van Schneider to The
+        Innovation Series. You describe yourself as a multidisciplinary maker of
+        useful, curious and beautiful things. So tell us a little about what
+        useful, curious and beautiful things are you making currently?
+      </p>
+      <p class="answer">
+        <b>Tobias:</b> Right now I’m focusing on
+        <a href="https://www.semplice.com/" target="_blank">Semplice</a>, my
+        portfolio system for designers. We just launched Semplice 4 after
+        working on the new features for over a year, and I’m excited to see what
+        designers do with it. I’m also writing a lot about design and
+        productivity on my blog,
+        <a href="http://www.vanschneider.com/blog" target="_blank">DESK</a>.
+        Then there are a couple side projects like my
+        <a
+          href="http://www.vanschneider.com/introducing-unsplash-x-van-schneider"
+          target="_blank"
+          >sweatshirt collaboration with Unsplash</a
+        >
+        and some fun interface work I can’t share just yet. I’m always working
+        on too many things at once and I like it that way.
+      </p>
+    </div>
+  </sergey-template>
+
+  <!-- / END EPISODE -->
+</sergey-import>

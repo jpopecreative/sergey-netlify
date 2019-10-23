@@ -362,11 +362,14 @@ body {
         top: 0.5rem;
         left: -4rem;
         color: #f5f5f5;
-        content: "Q&A";
+        z-index: 1;
         font-family: "Red Hat Display", sans-serif;
         font-size: 12rem;
-        letter-spacing: -0.05em;
-        z-index: 1; }
+        letter-spacing: -0.05em; }
+      #app .content .article .header.qa:after {
+        content: "Q&A"; }
+      #app .content .article .header.video:after {
+        content: "Video"; }
       #app .content .article .body {
         line-height: 1.5em; }
         #app .content .article .body .qa {

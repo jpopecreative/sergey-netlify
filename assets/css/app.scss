@@ -403,13 +403,17 @@ body {
             top: 0.5rem;
             left: -4rem;
             color: $grey-100;
+            z-index: 1;
 
-            content: "Q&A";
             font-family: "Red Hat Display", sans-serif;
             font-size: 12rem;
             letter-spacing: -0.05em;
-
-            z-index: 1;
+          }
+          &.qa:after {
+            content: "Q&A";
+          }
+          &.video:after {
+            content: "Video";
           }
         }
 

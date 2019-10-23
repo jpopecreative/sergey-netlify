@@ -9,15 +9,20 @@
   -->
   <!--  Episode Slug
         Use all lowercase letters with dashes and underscores and do not use spaces for the episode-slug
-        Ideally the episode-slug should match the directory name this file lives in
+        This episode-slug MUST match the exact directory name where this file lives
         For consistency, but not required, follow this format:
           1.) Using a dash, start the episode-slug with the episode number, IE: "episode-#"
           2.) Using an underscore after the episode number and persona name
           3.) Using dashes again, end the episode-slug with the personas name, IE: "first-last"
         EXAMPLE: "episode-1_derek-mauk" -->
-  <sergey-template name="episode-slug">
-    episode-4_tobias-van-schneider</sergey-template
+  <sergey-template name="episode-slug"
+    >episode-4_tobias-van-schneider</sergey-template
   >
+
+  <!--  Content Type
+            The episode-name acts as a friendly name rendering to the screen
+          EXAMPLE:  -->
+  <sergey-template name="content-type">qa</sergey-template>
 
   <!--  Episode Name
           The episode-name acts as a friendly name rendering to the screen
