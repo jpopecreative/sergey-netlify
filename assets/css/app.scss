@@ -23,21 +23,6 @@ body {
   color: #424242;
   @include font-regular();
   -webkit-font-smoothing: subpixel-antialiased;
-  // &#derek-mauk {
-  //   .hero.img {
-  //     background-image: url(https://fortunedotcom.files.wordpress.com/2015/12/gettyimages-176547085.jpg);
-  //   }
-  // }
-  // &#daniel-burka {
-  //   .hero.img {
-  //     background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1514920284141-IA07Q53JQOURC0OYNLBI/ke17ZwdGBToddI8pDm48kH5vi0BLs_vpV7jqxShkv7FZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpznFJtuCYrp_0l2KCtZSSi6J3dV6rlf2aa7naZJ89pts7luoM1rDXH3MPF1ghBKR60/speaker-dan-burka.jpg);
-  //   }
-  // }
-  // &#tobias-van-schneider {
-  //   .hero.img {
-  //     background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1509117545619-IM1H6LZK58C3X3A12SVJ/ke17ZwdGBToddI8pDm48kOQz9IFur3UmmavaG6GxBVkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2ckaahsWbIdJp74jdHyO1JpCZEZQBOsXFZQLDtilgVPsfdurHDt8XjyaGurlSWvQe/van2.jpg);
-  //   }
-  // }
 }
 
 #app {
@@ -49,7 +34,7 @@ body {
   flex-direction: column;
   .hero {
     flex: 0 1 40%;
-    min-height: 80vh;
+    min-height: 60vh;
     background-color: $grey-700;
 
     display: flex;
@@ -386,12 +371,27 @@ body {
   #app {
     flex-direction: row;
     .hero {
+      flex: 0 0 40%;
+      position: fixed;
+      width: 40%;
+      height: 100vh;
       .persona {
         margin: 2rem;
       }
+      // .hero-static {
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   // bottom: 0;
+      //   left: 0;
+      //   height: 100vh;
+      //   background-color: red;
+      // }
     }
 
     .content {
+      flex: 0 0 60%;
+      margin-left: 40%;
       .article {
         padding-left: 2rem;
         .header {
@@ -487,6 +487,9 @@ body {
         .persona-name {
           display: none;
         }
+      }
+      .hero-static {
+        display: none;
       }
     }
     .content {
