@@ -2,30 +2,42 @@
 <html lang="en">
   <sergey-import src="head" />
 
-  <body id="<sergey-slot name="episode-slug" />"> <!-- Create a custom page id and coresponding CSS  -->
+  <body id='<sergey-slot name="episode-slug" />'> <!-- Create a custom page id and coresponding CSS  -->
     <div id="app">
 
-      <div class="hero img">
+      <div class="hero img" style='<sergey-slot name="persona-hero-image-url" />'>
         <div class="brand">
           <img
             src="/assets/img/logo_TheInnovationSeries.png"
             alt="THE INNOVATION SERIES"
           />
         </div>
-        <!-- <sergey-import src="episode-persona" /> -->
 
         <div class="persona">
           <div class="persona-name"><sergey-slot name="persona-name" /></div>
           <div class="persona-excerpt"><sergey-slot name="persona-excerpt" /></div>
-          <div class="credit"><sergey-slot name="credit" /></div>
+          <div class="credit"><sergey-slot name="persona-hero-image-credit" /></div>
         </div>
-
 
       </div>
 
       <div class="content">
         <sergey-import src="episode-nav" />
-        <sergey-import src="episode-article" />
+        
+        <div class="article">
+            <div class="header">
+              <h1><sergey-slot name="persona-name" /></h1>
+              <h2><sergey-slot name="episode-name" /></h2>
+              <h3>
+                  <sergey-slot name="article-header" />
+              </h3>
+            </div>
+  
+            <div class="body">
+                <sergey-slot name="article-body" />
+            </div>
+          </div>
+
         <sergey-import src="footer" />
       </div>
 

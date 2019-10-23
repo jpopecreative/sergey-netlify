@@ -1,0 +1,136 @@
+<sergey-import src="episode-template">
+  <!--
+    –-----------------------------------------------------------------------------------------
+    // GENERAL CONTENT
+    // Enter general content and HTML for each of the required <sergey-template> properties below
+    //
+
+    –-----------------------------------------------------------------------------------------
+  -->
+  <!--  Episode Slug
+        Use all lowercase letters with dashes and underscores and do not use spaces for the episode-slug
+        Ideally the episode-slug should match the directory name this file lives in
+        For consistency, but not required, follow this format:
+          1.) Using a dash, start the episode-slug with the episode number, IE: "episode-#"
+          2.) Using an underscore after the episode number and persona name
+          3.) Using dashes again, end the episode-slug with the personas name, IE: "first-last"
+        EXAMPLE: "episode-1_derek-mauk" -->
+  <sergey-template name="episode-slug">
+    episode-4_tobias-van-schneider</sergey-template
+  >
+
+  <!--  Episode Name
+          The episode-name acts as a friendly name rendering to the screen
+        EXAMPLE: "Episode 1" -->
+  <sergey-template name="episode-name"> Episode 4</sergey-template>
+
+  <!--  Persona Name
+          The persona-name acts as a friendly name rendering to the screen
+        EXAMPLE: "Derek Mauk" -->
+  <sergey-template name="persona-name">Tobias van Schneider</sergey-template>
+
+  <!--  Persona Excerpt
+          ... define ...
+        EXAMPLE: "..." -->
+  <sergey-template name="persona-excerpt">
+    A multi-disciplinary maker of useful, curious and beautiful things.
+    Originally born in Germany, and raised in Austria, he now lives and works in
+    New York City.
+  </sergey-template>
+
+  <!--  Persona Hero Image URL
+          ... define ...
+        EXAMPLE: "..." -->
+  <sergey-template name="persona-hero-image-url">
+    background-image:
+    url(/assets/img/hero_tobias-van-schneider.jpg);</sergey-template
+  >
+
+  <!--  Hero Image Credit
+    *** NOT A REQUIRED PROPERTY ***
+        If persona-hero-image-url usage/license credit is not required or available, then:
+          Remove all space between the open and close tag for this property
+          EXAMPLE: <></>
+        If persona-hero-image-url usage/license credit is available or required, then:
+          Enter all content desired to show in this space
+          EXAMPLE: "Photo by: Joseph Nicéphore Niépce" -->
+  <sergey-template name="persona-hero-image-credit"></sergey-template>
+
+  <!--
+    –-----------------------------------------------------------------------------------------
+    // ARTICLE CONTENT
+    // Enter article content and HTML for each of the required <sergey-template> properties below
+    //
+
+    –-----------------------------------------------------------------------------------------
+  -->
+
+  <!--  Article Header
+          ... define ... -->
+  <sergey-template name="article-header">
+    Tobias is the co-founder of Semplice, a portfolio system by designers for
+    designers. He was formerly lead product designer and art director at
+    Spotify, and served on the AIGA Board of Directors in New York. He's had the
+    privilege of working with companies like Red Bull, NASA, BMW, Google, Wacom,
+    Sony, Toyota, Ralph Lauren, Bwin and more.
+  </sergey-template>
+
+  <!--  Article Body
+          ... define ...  -->
+  <sergey-template name="article-body">
+    <div class="qa">
+      <p class="question">
+        <b>Randy:</b> We would like to welcome Tobias van Schneider to The
+        Innovation Series. You describe yourself as a multidisciplinary maker of
+        useful, curious and beautiful things. So tell us a little about what
+        useful, curious and beautiful things are you making currently?
+      </p>
+      <p class="answer">
+        <b>Tobias:</b> Right now I’m focusing on
+        <a href="https://www.semplice.com/" target="_blank">Semplice</a>, my
+        portfolio system for designers. We just launched Semplice 4 after
+        working on the new features for over a year, and I’m excited to see what
+        designers do with it. I’m also writing a lot about design and
+        productivity on my blog,
+        <a href="http://www.vanschneider.com/blog" target="_blank">DESK</a>.
+        Then there are a couple side projects like my
+        <a
+          href="http://www.vanschneider.com/introducing-unsplash-x-van-schneider"
+          target="_blank"
+          >sweatshirt collaboration with Unsplash</a
+        >
+        and some fun interface work I can’t share just yet. I’m always working
+        on too many things at once and I like it that way.
+      </p>
+    </div>
+    <div class="qa">
+      <p class="question">
+        <b>Randy:</b> I know through following you for the past few years that
+        you are a big believer in keeping busy. In
+        <a
+          href="https://m.signalvnoise.com/more-work-worse-outcome-52837a524221"
+          target="_blank"
+          >More Work, Worse Outcome</a
+        >, Jason Fried has said that doing the right thing at the right time is
+        the difference maker. Not brute force. Do you agree and how do you
+        balance your time across multiple projects in order to do your best
+        work?
+      </p>
+      <p class="answer">
+        <b>Tobias:</b> I agree with Jason that timing can mean everything, and
+        we can certainly improve our productivity or efficiency by putting in
+        the right amount of effort at the right time. But I also believe hard
+        work pays off. In Jason’s example, he regrets shoveling the snow on his
+        sidewalks all day when he could have waited until the evening and
+        shoveled once. But the whole point of shoveling is to keep the sidewalks
+        clean for pedestrians, right? If he’s leaving the snow to pile up until
+        the end of the day, why shovel at all? <br /><br />I do my best work
+        when I consistently put in the effort and the time. Of course I strive
+        for efficiency and welcome any shortcut I can find – but at the end of
+        the day, nothing happens unless we work for it.
+      </p>
+    </div>
+  </sergey-template>
+
+  <!-- / END EPISODE -->
+</sergey-import>

@@ -86,15 +86,6 @@ body {
   letter-spacing: 0;
   line-height: 1.375em;
   -webkit-font-smoothing: subpixel-antialiased; }
-  html#derek-mauk .hero.img,
-  body#derek-mauk .hero.img {
-    background-image: url(https://fortunedotcom.files.wordpress.com/2015/12/gettyimages-176547085.jpg); }
-  html#daniel-burka .hero.img,
-  body#daniel-burka .hero.img {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1514920284141-IA07Q53JQOURC0OYNLBI/ke17ZwdGBToddI8pDm48kH5vi0BLs_vpV7jqxShkv7FZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpznFJtuCYrp_0l2KCtZSSi6J3dV6rlf2aa7naZJ89pts7luoM1rDXH3MPF1ghBKR60/speaker-dan-burka.jpg); }
-  html#tobias-van-schneider .hero.img,
-  body#tobias-van-schneider .hero.img {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1509117545619-IM1H6LZK58C3X3A12SVJ/ke17ZwdGBToddI8pDm48kOQz9IFur3UmmavaG6GxBVkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2ckaahsWbIdJp74jdHyO1JpCZEZQBOsXFZQLDtilgVPsfdurHDt8XjyaGurlSWvQe/van2.jpg); }
 
 #app {
   position: relative;
@@ -178,6 +169,7 @@ body {
       align-items: center; }
       #app .content .article .header {
         position: relative;
+        width: 100%;
         max-width: 50rem; }
         #app .content .article .header h1 {
           position: relative;
