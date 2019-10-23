@@ -1,0 +1,463 @@
+@import "variables";
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 1;
+  @extend %base-animation;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #424242;
+  @include font-regular();
+  -webkit-font-smoothing: subpixel-antialiased;
+  &#derek-mauk {
+    .hero.img {
+      background-image: url(https://fortunedotcom.files.wordpress.com/2015/12/gettyimages-176547085.jpg);
+    }
+  }
+  &#daniel-burka {
+    .hero.img {
+      background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1514920284141-IA07Q53JQOURC0OYNLBI/ke17ZwdGBToddI8pDm48kH5vi0BLs_vpV7jqxShkv7FZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpznFJtuCYrp_0l2KCtZSSi6J3dV6rlf2aa7naZJ89pts7luoM1rDXH3MPF1ghBKR60/speaker-dan-burka.jpg);
+    }
+  }
+  &#tobias-van-schneider {
+    .hero.img {
+      background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1509117545619-IM1H6LZK58C3X3A12SVJ/ke17ZwdGBToddI8pDm48kOQz9IFur3UmmavaG6GxBVkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2ckaahsWbIdJp74jdHyO1JpCZEZQBOsXFZQLDtilgVPsfdurHDt8XjyaGurlSWvQe/van2.jpg);
+    }
+  }
+}
+
+#app {
+  position: relative;
+  min-height: 100%;
+  background-color: red;
+
+  display: flex;
+  flex-direction: column;
+  .hero {
+    flex: 0 1 40%;
+    min-height: 80vh;
+    background-color: $grey-700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.img {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .brand {
+      margin-left: 1rem;
+      img {
+        max-height: 6.25rem;
+      }
+    }
+
+    .persona {
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.75);
+
+      .name {
+        padding-bottom: 0.625rem;
+        font-size: 1.5rem;
+      }
+      .description {
+        font-size: 1rem;
+        padding-bottom: 1.25rem;
+      }
+      .credit {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .content {
+    flex: 1 2 60%;
+    overflow: hidden;
+    background-color: $grey-50;
+
+    display: flex;
+    flex-direction: column;
+
+    $content-max: 50rem;
+
+    .nav {
+      position: relative;
+      padding: 1rem;
+      z-index: 10;
+
+      display: flex;
+      justify-content: space-between;
+
+      $icon-size: 2rem;
+
+      a {
+        display: inline-block;
+        position: relative;
+        width: $icon-size;
+        height: $icon-size;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          border-radius: 50%;
+          // background-color: $yellow-100;
+          // border-color: transparent;
+          // svg {
+          //   fill: $yellow-900;
+          // }
+          &:after {
+            top: -($icon-size / 2);
+            left: -($icon-size / 2);
+            width: ($icon-size * 2);
+            height: ($icon-size * 2);
+
+            background-color: transparent;
+            @extend %slow-animation;
+          }
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          top: ($icon-size / 2);
+          left: ($icon-size / 2);
+          width: 0;
+          height: 0;
+          background-color: $link-color;
+          border-radius: 50%;
+          z-index: 1;
+          @extend %slow-animation;
+        }
+      }
+      svg {
+        position: relative;
+        width: $icon-size;
+        height: $icon-size;
+        z-index: 10;
+      }
+    }
+
+    .article {
+      flex: 1 1 auto;
+      padding: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .header {
+        position: relative;
+        max-width: $content-max;
+
+        h1 {
+          position: relative;
+          z-index: 10;
+
+          margin: 0;
+          padding: 0 0 0.625rem 0;
+          @include font-light();
+          font-size: 2.625rem;
+          line-height: 1em;
+        }
+        h2 {
+          position: relative;
+          z-index: 10;
+
+          margin: 0;
+          padding: 0 0 2rem 0;
+          @include font-light();
+          font-size: 1rem;
+          line-height: 1em;
+        }
+        h3 {
+          position: relative;
+          z-index: 10;
+
+          margin: 0;
+          margin-bottom: 1.25rem;
+          color: $black;
+          @include font-semibold();
+          font-size: 1.125rem;
+        }
+      }
+
+      .body {
+        position: relative;
+        max-width: $content-max;
+        z-index: 10;
+
+        @include font-regular();
+
+        .qa {
+          margin-bottom: 1.75rem;
+          p {
+            // rules
+          }
+        }
+      }
+    }
+
+    .footer {
+      flex: 0 0 auto;
+      padding: 1rem;
+      background-color: $grey-800;
+      color: $white;
+      @include font-regular;
+      font-size: 0.875rem;
+      text-align: center;
+
+      a {
+        color: $link-color;
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .signup {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          margin-bottom: 1rem;
+
+          font-family: "Red Hat Display", sans-serif;
+          font-size: 2rem;
+          sup {
+            font-size: 1rem;
+          }
+        }
+        p.offer {
+          align-self: center;
+          margin-bottom: 3rem;
+          max-width: 32rem;
+          font-size: 1.125rem;
+          line-height: 1.5em;
+        }
+        form {
+          min-height: 4rem;
+          margin-bottom: 4rem;
+
+          display: flex;
+          flex-direction: column;
+
+          .input,
+          .button {
+            flex: 1 1 auto;
+            height: 3rem;
+
+            margin: 0.0625rem;
+            padding: 0 0.625rem;
+            background-color: $white;
+            border-width: 0.125rem;
+            border-color: transparent;
+            border-style: solid;
+            border-radius: 0;
+            border-bottom-color: $link-color;
+            font-size: 0.8125rem;
+            @extend %base-animation;
+            &:focus,
+            &:hover {
+              outline: none;
+              @extend %base-animation;
+            }
+          }
+
+          $placeholder: $grey-400;
+
+          ::placeholder {
+            color: $placeholder;
+          }
+          :-ms-input-placeholder {
+            color: $placeholder;
+          }
+          ::-ms-input-placeholder {
+            color: $placeholder;
+          }
+
+          .input {
+            background-color: $grey-600;
+            &:focus,
+            &:active,
+            &:not(:placeholder-shown) {
+              background-color: $black;
+              color: $white;
+              outline: none;
+              // border-color: $link-color;
+            }
+          }
+          .button {
+            background-color: $link-color;
+            @include font-medium;
+            text-transform: uppercase;
+            &:hover {
+              cursor: pointer;
+              background-color: $black;
+              border-color: $black;
+              color: $link-color;
+            }
+          }
+        }
+      }
+
+      $sup-size: 2rem;
+
+      .definition {
+        position: relative;
+        align-self: center;
+        max-width: 43.75rem;
+        margin-left: $sup-size;
+        margin-bottom: 2rem;
+        text-align: left;
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: -($sup-size);
+          width: $sup-size;
+          height: $sup-size;
+          text-align: left;
+
+          content: "[1]";
+          color: $link-color;
+        }
+
+        h3 {
+          margin: 0;
+          margin-bottom: 0.75rem;
+          padding: 0;
+          @include font-semibold;
+        }
+        p {
+          margin: 0;
+          margin-bottom: 1rem;
+          padding: 0;
+        }
+        .quote {
+          margin-top: 2rem;
+          color: $grey-500;
+          h3 {
+            @include font-regular;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #app {
+    flex-direction: row;
+    .hero {
+      .persona {
+        margin: 2rem;
+      }
+    }
+
+    .content {
+      .article {
+        .header {
+          h3 {
+            margin-bottom: 2.25rem;
+          }
+          &:after {
+            position: absolute;
+            top: 0.5rem;
+            left: -4rem;
+            color: $grey-100;
+
+            content: "Q&A";
+            font-family: "Red Hat Display", sans-serif;
+            font-size: 12rem;
+            letter-spacing: -0.05em;
+
+            z-index: 1;
+          }
+        }
+
+        .body {
+          .qa {
+            margin-bottom: 3rem;
+            $qa-size: 3rem;
+
+            .question {
+              position: relative;
+              margin-left: $qa-size;
+
+              &:after {
+                position: absolute;
+                top: 0;
+                left: -$qa-size;
+                width: $qa-size;
+                height: $qa-size;
+
+                content: "Q";
+                font-family: "Red Hat Display", sans-serif;
+                font-size: $qa-size;
+                line-height: $qa-size;
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        .signup form {
+          flex-direction: row;
+          justify-content: center;
+
+          .input,
+          .button {
+            flex: 0 1 auto;
+            height: auto;
+            min-height: 100%;
+            // width: 15rem;
+          }
+          .input {
+            width: 20rem;
+          }
+          .button {
+            width: 15rem;
+          }
+        }
+        .quote {
+          padding-right: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #app {
+    .hero {
+      .persona {
+        .name {
+          display: none;
+        }
+      }
+    }
+    .content {
+      .nav {
+        display: none;
+      }
+    }
+  }
+}

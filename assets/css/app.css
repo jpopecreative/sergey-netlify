@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "NotoSansDisplay-Light";
+  src: url("../font/NotoSansDisplay-Light.eot");
+  src: url("../font/NotoSansDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../font/NotoSansDisplay-Light.svg#NotoSansDisplay-Light") format("svg"), url("../font/NotoSansDisplay-Light.ttf") format("truetype"), url("../font/NotoSansDisplay-Light.woff") format("woff"), url("../font/NotoSansDisplay-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NotoSansDisplay-Regular";
+  src: url("../font/NotoSansDisplay-Regular.eot");
+  src: url("../font/NotoSansDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../font/NotoSansDisplay-Regular.svg#NotoSansDisplay-Regular") format("svg"), url("../font/NotoSansDisplay-Regular.ttf") format("truetype"), url("../font/NotoSansDisplay-Regular.woff") format("woff"), url("../font/NotoSansDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NotoSansDisplay-Medium";
+  src: url("../font/NotoSansDisplay-Medium.eot");
+  src: url("../font/NotoSansDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../font/NotoSansDisplay-Medium.svg#NotoSansDisplay-Medium") format("svg"), url("../font/NotoSansDisplay-Medium.ttf") format("truetype"), url("../font/NotoSansDisplay-Medium.woff") format("woff"), url("../font/NotoSansDisplay-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NotoSansDisplay-SemiBold";
+  src: url("../font/NotoSansDisplay-SemiBold.eot");
+  src: url("../font/NotoSansDisplay-SemiBold.eot?#iefix") format("embedded-opentype"), url("../font/NotoSansDisplay-SemiBold.svg#NotoSansDisplay-SemiBold") format("svg"), url("../font/NotoSansDisplay-SemiBold.ttf") format("truetype"), url("../font/NotoSansDisplay-SemiBold.woff") format("woff"), url("../font/NotoSansDisplay-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "NotoSansDisplay-Bold";
+  src: url("../font/NotoSansDisplay-Bold.eot");
+  src: url("../font/NotoSansDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../font/NotoSansDisplay-Bold.svg#NotoSansDisplay-Bold") format("svg"), url("../font/NotoSansDisplay-Bold.ttf") format("truetype"), url("../font/NotoSansDisplay-Bold.woff") format("woff"), url("../font/NotoSansDisplay-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+b {
+  font-family: "NotoSansDisplay-Bold", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1.375em; }
+
+a, a:hover, .overlay, #app .content .footer .signup form .input,
+#app .content .footer .signup form .button, #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:hover,
+#app .content .footer .signup form .button:focus,
+#app .content .footer .signup form .button:hover {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+
+#app .content .nav a:hover:after, #app .content .nav a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+a {
+  padding-left: 0.125rem;
+  padding-right: 0.25rem;
+  color: #000000;
+  background-color: transparent;
+  border-bottom: 0.125rem solid #ffd500;
+  font-family: "NotoSansDisplay-Medium", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1.375em;
+  text-decoration: none; }
+  a:hover {
+    background-color: #ffd500;
+    text-decoration: none; }
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 1; }
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #424242;
+  font-family: "NotoSansDisplay-Regular", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1.375em;
+  -webkit-font-smoothing: subpixel-antialiased; }
+  html#derek-mauk .hero.img,
+  body#derek-mauk .hero.img {
+    background-image: url(https://fortunedotcom.files.wordpress.com/2015/12/gettyimages-176547085.jpg); }
+  html#daniel-burka .hero.img,
+  body#daniel-burka .hero.img {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1514920284141-IA07Q53JQOURC0OYNLBI/ke17ZwdGBToddI8pDm48kH5vi0BLs_vpV7jqxShkv7FZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpznFJtuCYrp_0l2KCtZSSi6J3dV6rlf2aa7naZJ89pts7luoM1rDXH3MPF1ghBKR60/speaker-dan-burka.jpg); }
+  html#tobias-van-schneider .hero.img,
+  body#tobias-van-schneider .hero.img {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5873d6b3bf629adb9cadbf76/1509117545619-IM1H6LZK58C3X3A12SVJ/ke17ZwdGBToddI8pDm48kOQz9IFur3UmmavaG6GxBVkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2ckaahsWbIdJp74jdHyO1JpCZEZQBOsXFZQLDtilgVPsfdurHDt8XjyaGurlSWvQe/van2.jpg); }
+
+#app {
+  position: relative;
+  min-height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column; }
+  #app .hero {
+    flex: 0 1 40%;
+    min-height: 80vh;
+    background-color: #616161;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #app .hero.img {
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    #app .hero .brand {
+      margin-left: 1rem; }
+      #app .hero .brand img {
+        max-height: 6.25rem; }
+    #app .hero .persona {
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.75); }
+      #app .hero .persona .name {
+        padding-bottom: 0.625rem;
+        font-size: 1.5rem; }
+      #app .hero .persona .description {
+        font-size: 1rem;
+        padding-bottom: 1.25rem; }
+      #app .hero .persona .credit {
+        font-size: 0.75rem; }
+  #app .content {
+    flex: 1 2 60%;
+    overflow: hidden;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column; }
+    #app .content .nav {
+      position: relative;
+      padding: 1rem;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between; }
+      #app .content .nav a {
+        display: inline-block;
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0; }
+        #app .content .nav a:hover {
+          border-radius: 50%; }
+          #app .content .nav a:hover:after {
+            top: -1rem;
+            left: -1rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: transparent; }
+        #app .content .nav a:after {
+          content: " ";
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          width: 0;
+          height: 0;
+          background-color: #ffd500;
+          border-radius: 50%;
+          z-index: 1; }
+      #app .content .nav svg {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        z-index: 10; }
+    #app .content .article {
+      flex: 1 1 auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #app .content .article .header {
+        position: relative;
+        max-width: 50rem; }
+        #app .content .article .header h1 {
+          position: relative;
+          z-index: 10;
+          margin: 0;
+          padding: 0 0 0.625rem 0;
+          font-family: "NotoSansDisplay-Light", sans-serif;
+          font-weight: normal;
+          letter-spacing: 0;
+          line-height: 1.375em;
+          font-size: 2.625rem;
+          line-height: 1em; }
+        #app .content .article .header h2 {
+          position: relative;
+          z-index: 10;
+          margin: 0;
+          padding: 0 0 2rem 0;
+          font-family: "NotoSansDisplay-Light", sans-serif;
+          font-weight: normal;
+          letter-spacing: 0;
+          line-height: 1.375em;
+          font-size: 1rem;
+          line-height: 1em; }
+        #app .content .article .header h3 {
+          position: relative;
+          z-index: 10;
+          margin: 0;
+          margin-bottom: 1.25rem;
+          color: #000000;
+          font-family: "NotoSansDisplay-SemiBold", sans-serif;
+          font-weight: normal;
+          letter-spacing: 0;
+          line-height: 1.375em;
+          font-size: 1.125rem; }
+      #app .content .article .body {
+        position: relative;
+        max-width: 50rem;
+        z-index: 10;
+        font-family: "NotoSansDisplay-Regular", sans-serif;
+        font-weight: normal;
+        letter-spacing: 0;
+        line-height: 1.375em; }
+        #app .content .article .body .qa {
+          margin-bottom: 1.75rem; }
+    #app .content .footer {
+      flex: 0 0 auto;
+      padding: 1rem;
+      background-color: #424242;
+      color: #ffffff;
+      font-family: "NotoSansDisplay-Regular", sans-serif;
+      font-weight: normal;
+      letter-spacing: 0;
+      line-height: 1.375em;
+      font-size: 0.875rem;
+      text-align: center; }
+      #app .content .footer a {
+        color: #ffd500; }
+        #app .content .footer a:hover {
+          color: #000000; }
+      #app .content .footer .signup {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column; }
+        #app .content .footer .signup h2 {
+          margin-bottom: 1rem;
+          font-family: "Red Hat Display", sans-serif;
+          font-size: 2rem; }
+          #app .content .footer .signup h2 sup {
+            font-size: 1rem; }
+        #app .content .footer .signup p.offer {
+          align-self: center;
+          margin-bottom: 3rem;
+          max-width: 32rem;
+          font-size: 1.125rem;
+          line-height: 1.5em; }
+        #app .content .footer .signup form {
+          min-height: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column; }
+          #app .content .footer .signup form .input,
+          #app .content .footer .signup form .button {
+            flex: 1 1 auto;
+            height: 3rem;
+            margin: 0.0625rem;
+            padding: 0 0.625rem;
+            background-color: #ffffff;
+            border-width: 0.125rem;
+            border-color: transparent;
+            border-style: solid;
+            border-radius: 0;
+            border-bottom-color: #ffd500;
+            font-size: 0.8125rem; }
+            #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:hover,
+            #app .content .footer .signup form .button:focus,
+            #app .content .footer .signup form .button:hover {
+              outline: none; }
+          #app .content .footer .signup form ::placeholder {
+            color: #bdbdbd; }
+          #app .content .footer .signup form :-ms-input-placeholder {
+            color: #bdbdbd; }
+          #app .content .footer .signup form ::-ms-input-placeholder {
+            color: #bdbdbd; }
+          #app .content .footer .signup form .input {
+            background-color: #757575; }
+            #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:active, #app .content .footer .signup form .input:not(:placeholder-shown) {
+              background-color: #000000;
+              color: #ffffff;
+              outline: none; }
+          #app .content .footer .signup form .button {
+            background-color: #ffd500;
+            font-family: "NotoSansDisplay-Medium", sans-serif;
+            font-weight: normal;
+            letter-spacing: 0;
+            line-height: 1.375em;
+            text-transform: uppercase; }
+            #app .content .footer .signup form .button:hover {
+              cursor: pointer;
+              background-color: #000000;
+              border-color: #000000;
+              color: #ffd500; }
+      #app .content .footer .definition {
+        position: relative;
+        align-self: center;
+        max-width: 43.75rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        text-align: left; }
+        #app .content .footer .definition:after {
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          width: 2rem;
+          height: 2rem;
+          text-align: left;
+          content: "[1]";
+          color: #ffd500; }
+        #app .content .footer .definition h3 {
+          margin: 0;
+          margin-bottom: 0.75rem;
+          padding: 0;
+          font-family: "NotoSansDisplay-SemiBold", sans-serif;
+          font-weight: normal;
+          letter-spacing: 0;
+          line-height: 1.375em; }
+        #app .content .footer .definition p {
+          margin: 0;
+          margin-bottom: 1rem;
+          padding: 0; }
+        #app .content .footer .definition .quote {
+          margin-top: 2rem;
+          color: #9e9e9e; }
+          #app .content .footer .definition .quote h3 {
+            font-family: "NotoSansDisplay-Regular", sans-serif;
+            font-weight: normal;
+            letter-spacing: 0;
+            line-height: 1.375em; }
+
+@media screen and (min-width: 900px) {
+  #app {
+    flex-direction: row; }
+    #app .hero .persona {
+      margin: 2rem; }
+    #app .content .article .header h3 {
+      margin-bottom: 2.25rem; }
+    #app .content .article .header:after {
+      position: absolute;
+      top: 0.5rem;
+      left: -4rem;
+      color: #f5f5f5;
+      content: "Q&A";
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 12rem;
+      letter-spacing: -0.05em;
+      z-index: 1; }
+    #app .content .article .body .qa {
+      margin-bottom: 3rem; }
+      #app .content .article .body .qa .question {
+        position: relative;
+        margin-left: 3rem; }
+        #app .content .article .body .qa .question:after {
+          position: absolute;
+          top: 0;
+          left: -3rem;
+          width: 3rem;
+          height: 3rem;
+          content: "Q";
+          font-family: "Red Hat Display", sans-serif;
+          font-size: 3rem;
+          line-height: 3rem; }
+    #app .content .footer .signup form {
+      flex-direction: row;
+      justify-content: center; }
+      #app .content .footer .signup form .input,
+      #app .content .footer .signup form .button {
+        flex: 0 1 auto;
+        height: auto;
+        min-height: 100%; }
+      #app .content .footer .signup form .input {
+        width: 20rem; }
+      #app .content .footer .signup form .button {
+        width: 15rem; }
+    #app .content .footer .quote {
+      padding-right: 200px; } }
+@media screen and (max-width: 899px) {
+  #app .hero .persona .name {
+    display: none; }
+  #app .content .nav {
+    display: none; } }
