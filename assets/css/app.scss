@@ -237,6 +237,7 @@ body {
           margin-bottom: 1rem;
 
           font-family: "Red Hat Display", sans-serif;
+          line-height: 2rem;
           font-size: 2rem;
           sup {
             font-size: 1rem;
@@ -250,66 +251,86 @@ body {
           line-height: 1.5em;
         }
         form {
-          min-height: 4rem;
           margin-bottom: 4rem;
-
           display: flex;
           flex-direction: column;
 
-          .input,
-          .button {
-            flex: 1 1 auto;
-            height: 3rem;
-
+          .response {
+            align-self: stretch;
             margin: 0.0625rem;
-            padding: 0 0.625rem;
-            background-color: $white;
-            border-width: 0.125rem;
-            border-color: transparent;
-            border-style: solid;
-            border-radius: 0;
-            border-bottom-color: $link-color;
-            font-size: 0.8125rem;
-            @extend %base-animation;
-            &:focus,
-            &:hover {
-              outline: none;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            @include font-light();
+            font-size: 1.125rem;
+
+            &#mce-success-response {
+              background-color: $light-green-a700;
+              color: $black;
+            }
+            &#mce-error-response {
+              background-color: $pink-a400;
+            }
+          }
+          .fields {
+            min-height: 4rem;
+            display: flex;
+            flex-direction: column;
+
+            .input,
+            .button {
+              flex: 1 1 auto;
+              height: 3rem;
+
+              margin: 0.0625rem;
+              padding: 0 0.625rem;
+              background-color: $white;
+              border-width: 0.125rem;
+              border-color: transparent;
+              border-style: solid;
+              border-radius: 0;
+              border-bottom-color: $link-color;
+              font-size: 0.8125rem;
               @extend %base-animation;
+              &:focus,
+              &:hover {
+                outline: none;
+                @extend %base-animation;
+              }
             }
-          }
 
-          $placeholder: $grey-400;
-
-          ::placeholder {
-            color: $placeholder;
-          }
-          :-ms-input-placeholder {
-            color: $placeholder;
-          }
-          ::-ms-input-placeholder {
-            color: $placeholder;
-          }
-
-          .input {
-            background-color: $grey-600;
-            &:focus,
-            &:active,
-            &:not(:placeholder-shown) {
-              background-color: $black;
-              color: $white;
-              outline: none;
-              // border-color: $link-color;
+            $placeholder: $grey-400;
+            ::placeholder {
+              color: $placeholder;
             }
-          }
-          .button {
-            background-color: $link-color;
-            @include font-bold;
-            text-transform: uppercase;
-            &:hover {
-              cursor: pointer;
-              background-color: $black;
-              border-color: $black;
-              color: $link-color;
+            :-ms-input-placeholder {
+              color: $placeholder;
+            }
+            ::-ms-input-placeholder {
+              color: $placeholder;
+            }
+
+            .input {
+              background-color: $grey-600;
+              &:active,
+              &:focus,
+              &:focus-within,
+              &:not(:placeholder-shown) {
+                background-color: $black;
+                color: $white;
+                outline: none;
+                // border-color: $link-color;
+              }
+            }
+            .button {
+              background-color: $link-color;
+              @include font-bold;
+              text-transform: uppercase;
+              &:hover {
+                cursor: pointer;
+                background-color: $black;
+                border-color: $black;
+                color: $link-color;
+              }
             }
           }
         }
@@ -418,22 +439,32 @@ body {
         }
       }
       .footer {
-        .signup form {
-          flex-direction: row;
-          justify-content: center;
+        .signup {
+          form {
+            .response {
+              flex: 1 1 auto;
+              align-self: center;
+              width: 100%;
+              max-width: (20rem + 15rem +0.125rem);
+            }
 
-          .input,
-          .button {
-            flex: 0 1 auto;
-            height: auto;
-            min-height: 100%;
-            // width: 15rem;
-          }
-          .input {
-            width: 20rem;
-          }
-          .button {
-            width: 15rem;
+            .fields {
+              flex-direction: row;
+              justify-content: center;
+
+              .input,
+              .button {
+                flex: 0 1 auto;
+                height: auto;
+                min-height: 100%;
+              }
+              .input {
+                width: 20rem;
+              }
+              .button {
+                width: 15rem;
+              }
+            }
           }
         }
         .quote {

@@ -34,10 +34,10 @@ b {
   letter-spacing: 0;
   line-height: 1.375em; }
 
-a, a:hover, .overlay, #app .content .footer .signup form .input,
-#app .content .footer .signup form .button, #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:hover,
-#app .content .footer .signup form .button:focus,
-#app .content .footer .signup form .button:hover {
+a, a:hover, .overlay, #app .content .footer .signup form .fields .input,
+#app .content .footer .signup form .fields .button, #app .content .footer .signup form .fields .input:focus, #app .content .footer .signup form .fields .input:hover,
+#app .content .footer .signup form .fields .button:focus,
+#app .content .footer .signup form .fields .button:hover {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out; }
@@ -245,6 +245,7 @@ body {
         #app .content .footer .signup h2 {
           margin-bottom: 1rem;
           font-family: "Red Hat Display", sans-serif;
+          line-height: 2rem;
           font-size: 2rem; }
           #app .content .footer .signup h2 sup {
             font-size: 1rem; }
@@ -255,51 +256,69 @@ body {
           font-size: 1.125rem;
           line-height: 1.5em; }
         #app .content .footer .signup form {
-          min-height: 4rem;
           margin-bottom: 4rem;
           display: flex;
           flex-direction: column; }
-          #app .content .footer .signup form .input,
-          #app .content .footer .signup form .button {
-            flex: 1 1 auto;
-            height: 3rem;
+          #app .content .footer .signup form .response {
+            align-self: stretch;
             margin: 0.0625rem;
-            padding: 0 0.625rem;
-            background-color: #ffffff;
-            border-width: 0.125rem;
-            border-color: transparent;
-            border-style: solid;
-            border-radius: 0;
-            border-bottom-color: #ffd500;
-            font-size: 0.8125rem; }
-            #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:hover,
-            #app .content .footer .signup form .button:focus,
-            #app .content .footer .signup form .button:hover {
-              outline: none; }
-          #app .content .footer .signup form ::placeholder {
-            color: #bdbdbd; }
-          #app .content .footer .signup form :-ms-input-placeholder {
-            color: #bdbdbd; }
-          #app .content .footer .signup form ::-ms-input-placeholder {
-            color: #bdbdbd; }
-          #app .content .footer .signup form .input {
-            background-color: #757575; }
-            #app .content .footer .signup form .input:focus, #app .content .footer .signup form .input:active, #app .content .footer .signup form .input:not(:placeholder-shown) {
-              background-color: #000000;
-              color: #ffffff;
-              outline: none; }
-          #app .content .footer .signup form .button {
-            background-color: #ffd500;
-            font-family: "NotoSansDisplay-Bold", sans-serif;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            font-family: "NotoSansDisplay-Light", sans-serif;
             font-weight: normal;
             letter-spacing: 0;
             line-height: 1.375em;
-            text-transform: uppercase; }
-            #app .content .footer .signup form .button:hover {
-              cursor: pointer;
-              background-color: #000000;
-              border-color: #000000;
-              color: #ffd500; }
+            font-size: 1.125rem; }
+            #app .content .footer .signup form .response#mce-success-response {
+              background-color: #64dd17;
+              color: #000000; }
+            #app .content .footer .signup form .response#mce-error-response {
+              background-color: #f50057; }
+          #app .content .footer .signup form .fields {
+            min-height: 4rem;
+            display: flex;
+            flex-direction: column; }
+            #app .content .footer .signup form .fields .input,
+            #app .content .footer .signup form .fields .button {
+              flex: 1 1 auto;
+              height: 3rem;
+              margin: 0.0625rem;
+              padding: 0 0.625rem;
+              background-color: #ffffff;
+              border-width: 0.125rem;
+              border-color: transparent;
+              border-style: solid;
+              border-radius: 0;
+              border-bottom-color: #ffd500;
+              font-size: 0.8125rem; }
+              #app .content .footer .signup form .fields .input:focus, #app .content .footer .signup form .fields .input:hover,
+              #app .content .footer .signup form .fields .button:focus,
+              #app .content .footer .signup form .fields .button:hover {
+                outline: none; }
+            #app .content .footer .signup form .fields ::placeholder {
+              color: #bdbdbd; }
+            #app .content .footer .signup form .fields :-ms-input-placeholder {
+              color: #bdbdbd; }
+            #app .content .footer .signup form .fields ::-ms-input-placeholder {
+              color: #bdbdbd; }
+            #app .content .footer .signup form .fields .input {
+              background-color: #757575; }
+              #app .content .footer .signup form .fields .input:active, #app .content .footer .signup form .fields .input:focus, #app .content .footer .signup form .fields .input:focus-within, #app .content .footer .signup form .fields .input:not(:placeholder-shown) {
+                background-color: #000000;
+                color: #ffffff;
+                outline: none; }
+            #app .content .footer .signup form .fields .button {
+              background-color: #ffd500;
+              font-family: "NotoSansDisplay-Bold", sans-serif;
+              font-weight: normal;
+              letter-spacing: 0;
+              line-height: 1.375em;
+              text-transform: uppercase; }
+              #app .content .footer .signup form .fields .button:hover {
+                cursor: pointer;
+                background-color: #000000;
+                border-color: #000000;
+                color: #ffd500; }
       #app .content .footer .definition {
         position: relative;
         align-self: center;
@@ -373,17 +392,22 @@ body {
               font-family: "Red Hat Display", sans-serif;
               font-size: 3rem;
               line-height: 3rem; }
-    #app .content .footer .signup form {
+    #app .content .footer .signup form .response {
+      flex: 1 1 auto;
+      align-self: center;
+      width: 100%;
+      max-width: 35.125rem; }
+    #app .content .footer .signup form .fields {
       flex-direction: row;
       justify-content: center; }
-      #app .content .footer .signup form .input,
-      #app .content .footer .signup form .button {
+      #app .content .footer .signup form .fields .input,
+      #app .content .footer .signup form .fields .button {
         flex: 0 1 auto;
         height: auto;
         min-height: 100%; }
-      #app .content .footer .signup form .input {
+      #app .content .footer .signup form .fields .input {
         width: 20rem; }
-      #app .content .footer .signup form .button {
+      #app .content .footer .signup form .fields .button {
         width: 15rem; }
     #app .content .footer .quote {
       padding-right: 200px; } }
