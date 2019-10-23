@@ -356,21 +356,23 @@ body {
         font-size: 12rem;
         letter-spacing: -0.05em;
         z-index: 1; }
-      #app .content .article .body .qa {
-        margin-bottom: 3rem; }
-        #app .content .article .body .qa .question {
-          position: relative;
-          margin-left: 3rem; }
-          #app .content .article .body .qa .question:after {
-            position: absolute;
-            top: 0;
-            left: -3rem;
-            width: 3rem;
-            height: 3rem;
-            content: "Q";
-            font-family: "Red Hat Display", sans-serif;
-            font-size: 3rem;
-            line-height: 3rem; }
+      #app .content .article .body {
+        line-height: 1.5em; }
+        #app .content .article .body .qa {
+          margin-bottom: 3rem; }
+          #app .content .article .body .qa .question {
+            position: relative;
+            margin-left: 3rem; }
+            #app .content .article .body .qa .question:after {
+              position: absolute;
+              top: 0;
+              left: -3rem;
+              width: 3rem;
+              height: 3rem;
+              content: "Q";
+              font-family: "Red Hat Display", sans-serif;
+              font-size: 3rem;
+              line-height: 3rem; }
     #app .content .footer .signup form {
       flex-direction: row;
       justify-content: center; }
