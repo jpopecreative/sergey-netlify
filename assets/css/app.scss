@@ -73,11 +73,11 @@ body {
       padding: 1rem;
       background-color: rgba(255, 255, 255, 0.75);
 
-      .name {
+      .persona-name {
         padding-bottom: 0.625rem;
         font-size: 1.5rem;
       }
-      .description {
+      .persona-excerpt {
         font-size: 1rem;
         padding-bottom: 1.25rem;
       }
@@ -448,7 +448,7 @@ body {
   #app {
     .hero {
       .persona {
-        .name {
+        .persona-name {
           display: none;
         }
       }

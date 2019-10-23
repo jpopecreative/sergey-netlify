@@ -120,10 +120,10 @@ body {
     #app .hero .persona {
       padding: 1rem;
       background-color: rgba(255, 255, 255, 0.75); }
-      #app .hero .persona .name {
+      #app .hero .persona .persona-name {
         padding-bottom: 0.625rem;
         font-size: 1.5rem; }
-      #app .hero .persona .description {
+      #app .hero .persona .persona-excerpt {
         font-size: 1rem;
         padding-bottom: 1.25rem; }
       #app .hero .persona .credit {
@@ -388,7 +388,7 @@ body {
     #app .content .footer .quote {
       padding-right: 200px; } }
 @media screen and (max-width: 899px) {
-  #app .hero .persona .name {
+  #app .hero .persona .persona-name {
     display: none; }
   #app .content .nav {
     display: none; } }

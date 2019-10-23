@@ -16,15 +16,20 @@
             alt="THE INNOVATION SERIES"
           />
         </div>
-        <div class="persona">
-          <div class="name">Tobias van Schneider</div>
-          <div class="description">
-            A multi-disciplinary maker of useful, curious and beautiful things.
-            Originally born in Germany, and raised in Austria, he now lives and
-            works in New York City.
-          </div>
-          <div class="credit">Photo by: Graham Hancock</div>
-        </div>
+
+
+
+        <sergey-import src="episode-persona">
+            <sergey-template name="persona-name">Tobias van Schneider</sergey-template>
+            <sergey-template name="persona-excerpt">
+              A multi-disciplinary maker of useful, curious and beautiful things. Originally 
+              born in Germany, and raised in Austria, he now lives and works in New York City.
+              </sergey-template>
+            <sergey-template name="credit">Photo by: Graham Hancock</sergey-template>
+        </sergey-import>
+
+
+        
       </div>
       <div class="content">
         <div class="nav">
@@ -70,7 +75,7 @@
         </div>
         <div class="article">
           <div class="header">
-            <h1>Tobias van Schneider</h1>
+            <h1><sergey-slot name="interviewee" /></h1>
             <h2>Episode 4</h2>
             <h3>
               Tobias is the co-founder of Semplice, a portfolio system by
