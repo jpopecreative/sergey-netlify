@@ -303,7 +303,7 @@ body {
           }
           .button {
             background-color: $link-color;
-            @include font-medium;
+            @include font-bold;
             text-transform: uppercase;
             &:hover {
               cursor: pointer;
@@ -371,6 +371,7 @@ body {
 
     .content {
       .article {
+        padding-left: 2rem;
         .header {
           h3 {
             margin-bottom: 2.25rem;
