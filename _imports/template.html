@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<sergey-import src="head" />
+  <sergey-import src="head" />
 
-<body>
-  <sergey-import src="header" />
+  <body id="tobias-van-schneider"> <!-- Create a custom page id and coresponding CSS  -->
+    <div id="app">
 
-  <main class="wrapper">
-    <sergey-slot />
-  </main>
+      <div class="hero img daniel-burka">
+        <div class="brand">
+          <img
+            src="assets/img/logo_TheInnovationSeries.png"
+            alt="THE INNOVATION SERIES"
+          />
+        </div>
+        <sergey-import src="episode-persona" />
+      </div>
 
-  <sergey-import src="footer" />
-</body>
+      <div class="content">
+        <sergey-import src="episode-nav" />
+        <sergey-import src="episode-article" />
+        <sergey-import src="footer" />
+      </div>
 
+    </div>
+    <script type="text/babel">
+      // JS
+    </script>
+  </body>
 </html>
