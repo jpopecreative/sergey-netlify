@@ -59,18 +59,18 @@
           </div>
         </div>
         <div class="article">
-            <div class="header <sergey-slot name="content-type" />">
-              <h1><sergey-slot name="persona-name" /></h1>
-              <h2><sergey-slot name="episode-name" /></h2>
-              <h3>
-                  <sergey-slot name="article-header" />
-              </h3>
-            </div>
-            <div class="body">
-                <sergey-slot name="article-body" />
-            </div>
+          <div class='header <sergey-slot name="content-type" />'>
+            <h1><sergey-slot name="persona-name" /></h1>
+            <h2><sergey-slot name="episode-name" /></h2>
+            <h3>
+                <sergey-slot name="article-header" />
+            </h3>
           </div>
-        <sergey-import src="footer" />
+          <div class="body">
+              <sergey-slot name="article-body" />
+          </div>
+          <sergey-import src="footer" />
+        </div>
       </div>
     </div>
   </body>

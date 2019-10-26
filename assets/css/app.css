@@ -102,7 +102,6 @@ body {
 #app {
   position: relative;
   min-height: 100%;
-  background-color: red;
   display: flex;
   flex-direction: column;
 }
@@ -429,6 +428,8 @@ body {
   }
   #app .content .article {
     padding-left: 2rem;
+    background-color: #424242;
+    display: flex;
   }
   #app .content .article .header h3 {
     margin-bottom: 2.25rem;
@@ -494,6 +495,44 @@ body {
   }
   #app .content .footer .quote {
     padding-right: 200px;
+  }
+
+  #home-screen #app {
+    flex-direction: row-reverse;
+  }
+  #home-screen #app .hero {
+    flex: 0 0 40%;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+  }
+  #home-screen #app .content {
+    flex: 0 0 60%;
+    margin-right: 40%;
+  }
+  #home-screen #app .content .article {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #home-screen #app .content .article .space {
+    flex: 1 1 auto;
+  }
+  #home-screen #app .content .article .space:first-child {
+    min-width: 100%;
+  }
+  #home-screen #app .content .article .space:nth-child(2), #home-screen #app .content .article .space:nth-child(3) {
+    min-width: 50%;
+  }
+  #home-screen #app .content .article .space .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: #424242 1px solid;
+    min-height: 300px;
   }
 }
 @media screen and (max-width: 899px) {
