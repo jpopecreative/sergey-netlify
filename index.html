@@ -1,40 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <sergey-import src="head">
-    <!-- Add a custom title and meta data to this page for SEO purposes -->
-      <title>Tobias van Schneider – THE INNOVATION SERVIES</title>
-      <meta name="description" content="Q&A Interview – Tobias van Schneider provides very insightful answers based on his extensive career in design. Interviewed by: Randy Fisher (DeveloperTown)">
-    <!-- / -->
-  </sergey-import>
-  
-  <body id="tobias-van-schneider"> <!-- Create a custom page id and coresponding CSS  -->
+  <sergey-import src="head" />
+  <body id='<sergey-slot name="episode-slug" />'>
     <div id="app">
-      <div class="hero img daniel-burka">
+      <div class="hero img" style='<sergey-slot name="persona-hero-image-url" />'>
         <div class="brand">
           <img
-            src="assets/img/logo_TheInnovationSeries.png"
+            src="/assets/img/logo_TheInnovationSeries.png"
             alt="THE INNOVATION SERIES"
           />
         </div>
-
-
-
-        <sergey-import src="episode-persona">
-            <sergey-template name="persona-name">Tobias van Schneider</sergey-template>
-            <sergey-template name="persona-excerpt">
-              A multi-disciplinary maker of useful, curious and beautiful things. Originally 
-              born in Germany, and raised in Austria, he now lives and works in New York City.
-              </sergey-template>
-            <sergey-template name="credit">Photo by: Graham Hancock</sergey-template>
-        </sergey-import>
-
-
-        
+        <div class="persona">
+          <div class="persona-name"><sergey-slot name="persona-name" /></div>
+          <div class="persona-excerpt"><sergey-slot name="persona-excerpt" /></div>
+          <div class="credit"><sergey-slot name="persona-hero-image-credit" /></div>
+        </div>
       </div>
       <div class="content">
         <div class="nav">
           <div>
-            <a href="https://www.google.com/">
+            <a href='<sergey-slot name="episode-prev" />'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -45,7 +30,7 @@
                 <path d="M0 0h24v24H0z" fill="none" />
               </svg>
             </a>
-            <a href="https://www.google.com/">
+            <a href='<sergey-slot name="episode-next" />'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -58,7 +43,7 @@
             </a>
           </div>
           <div>
-            <a href="https://www.google.com/">
+            <a href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -74,85 +59,19 @@
           </div>
         </div>
         <div class="article">
-          <div class="header">
-            <h1><sergey-slot name="interviewee" /></h1>
-            <h2>Episode 4</h2>
-            <h3>
-              Tobias is the co-founder of Semplice, a portfolio system by
-              designers for designers. He was formerly lead product designer and
-              art director at Spotify, and served on the AIGA Board of Directors
-              in New York. He's had the privilege of working with companies like
-              Red Bull, NASA, BMW, Google, Wacom, Sony, Toyota, Ralph Lauren,
-              Bwin and more.
-            </h3>
-          </div>
-
-          <div class="body">
-            <div class="qa">
-              <p class="question">
-                <b>Randy:</b> We would like to welcome Tobias van Schneider to
-                The Innovation Series. You describe yourself as a
-                multidisciplinary maker of useful, curious and beautiful things.
-                So tell us a little about what useful, curious and beautiful
-                things are you making currently?
-              </p>
-              <p class="answer">
-                <b>Tobias:</b> Right now I’m focusing on
-                <a href="https://www.semplice.com/" target="_blank">Semplice</a
-                >, my portfolio system for designers. We just launched Semplice
-                4 after working on the new features for over a year, and I’m
-                excited to see what designers do with it. I’m also writing a lot
-                about design and productivity on my blog,
-                <a href="http://www.vanschneider.com/blog" target="_blank"
-                  >DESK</a
-                >. Then there are a couple side projects like my
-                <a
-                  href="http://www.vanschneider.com/introducing-unsplash-x-van-schneider"
-                  target="_blank"
-                  >sweatshirt collaboration with Unsplash</a
-                >
-                and some fun interface work I can’t share just yet. I’m always
-                working on too many things at once and I like it that way.
-              </p>
+            <div class="header <sergey-slot name="content-type" />">
+              <h1><sergey-slot name="persona-name" /></h1>
+              <h2><sergey-slot name="episode-name" /></h2>
+              <h3>
+                  <sergey-slot name="article-header" />
+              </h3>
             </div>
-
-            <div class="qa">
-              <p class="question">
-                <b>Randy:</b> I know through following you for the past few
-                years that you are a big believer in keeping busy. In
-                <a
-                  href="https://m.signalvnoise.com/more-work-worse-outcome-52837a524221"
-                  target="_blank"
-                  >More Work, Worse Outcome</a
-                >, Jason Fried has said that doing the right thing at the right
-                time is the difference maker. Not brute force. Do you agree and
-                how do you balance your time across multiple projects in order
-                to do your best work?
-              </p>
-              <p class="answer">
-                <b>Tobias:</b> I agree with Jason that timing can mean
-                everything, and we can certainly improve our productivity or
-                efficiency by putting in the right amount of effort at the right
-                time. But I also believe hard work pays off. In Jason’s example,
-                he regrets shoveling the snow on his sidewalks all day when he
-                could have waited until the evening and shoveled once. But the
-                whole point of shoveling is to keep the sidewalks clean for
-                pedestrians, right? If he’s leaving the snow to pile up until
-                the end of the day, why shovel at all? <br /><br />I do my best
-                work when I consistently put in the effort and the time. Of
-                course I strive for efficiency and welcome any shortcut I can
-                find – but at the end of the day, nothing happens unless we work
-                for it.
-              </p>
+            <div class="body">
+                <sergey-slot name="article-body" />
             </div>
           </div>
-        </div>
         <sergey-import src="footer" />
       </div>
     </div>
-
-    <script type="text/babel">
-      // JS
-    </script>
   </body>
 </html>
