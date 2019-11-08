@@ -236,6 +236,9 @@ body {
   line-height: 1.375em;
   font-size: 1.125rem;
 }
+#app .content .article .card {
+  min-height: 6rem;
+}
 #app .content .article .body {
   position: relative;
   max-width: 50rem;
@@ -521,16 +524,19 @@ body {
     flex: 1 1 auto;
   }
   #home-screen #app .content .article .space:first-child {
-    min-width: 100%;
+    min-height: 100%;
   }
   #home-screen #app .content .article .space:nth-child(2), #home-screen #app .content .article .space:nth-child(3) {
-    min-width: 50%;
+    min-height: 50%;
   }
   #home-screen #app .content .article .space .card {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: #424242 1px solid;
     min-height: 300px;
   }
